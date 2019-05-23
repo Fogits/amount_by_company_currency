@@ -10,6 +10,7 @@
  'website': 'https://www.fogits.com/',
  'license': 'AGPL-3',
  'category': 'Invoicing Management',
+ 'images': ['static/description/image.jpg'],
  'depends': [
      'base',
      'account',
