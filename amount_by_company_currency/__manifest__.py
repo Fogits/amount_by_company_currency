@@ -6,7 +6,7 @@
  'summary': 'Add total amount with company currency in invoice',
 
  'version': '12.0',
- 'author': 'fogits',
+ 'author': 'Fogits Solutions',
  'website': 'https://www.fogits.com/',
  'license': 'AGPL-3',
  'category': 'Invoicing Management',
