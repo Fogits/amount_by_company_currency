@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="invoice_form" model="ir.ui.view">
+        <field name="name">account.invoice.form.new.total.currency</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='amount_total']" position="after">
+                <field name="amount_total_currency" widget="monetary" invisible="1"
+                       options="{'currency_field': 'company_currency_id'}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="invoice_tree" model="ir.ui.view">
+        <field name="name">account.invoice.tree.new.total.currency</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='amount_total_signed']" position="replace">
+                <field name="amount_total_signed" string="Total"/>
+                <field name="amount_total_currency" widget="monetary"  string="Total in current currency" sum="Total"
+                       options="{'currency_field': 'company_currency_id'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
