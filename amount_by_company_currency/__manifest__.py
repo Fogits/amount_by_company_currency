@@ -3,8 +3,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
 {'name': 'Total amount with company currency',
- 'summary': 'Add total amount with company currency in invoice',
-
+ 'summary': 'This module provides the company with the feature of converting currency and calculating the total amount in Tree View.',
  'version': '12.0',
  'author': 'Fogits Solutions',
  'website': 'https://www.fogits.com/',
